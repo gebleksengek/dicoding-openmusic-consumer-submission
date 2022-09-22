@@ -1,0 +1,30 @@
+{
+  "name": "openmusic-broker-consumer",
+  "version": "1.0.0",
+  "description": "Dicoding OpenMusic Broker Consumer",
+  "main": "src/consumer.js",
+  "author": "Dhiki Indryanto",
+  "license": "MIT",
+  "scripts": {
+    "start-prod": "NODE_ENV=production node ./src/consumer.js",
+    "start-dev": "nodemon -w src/ ./src/consumer.js",
+    "lint": "eslint ./src"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsdoc": "^39.3.6",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-sort-requires": "^2.1.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.0.2",
+    "nodemailer": "^6.7.8",
+    "pg": "^8.8.0"
+  }
+}

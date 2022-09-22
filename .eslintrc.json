@@ -1,0 +1,31 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:jsdoc/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["prettier", "sort-requires"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "settings": {
+    "jsdoc": {
+      "mode": "typescript"
+    }
+  },
+  "rules": {
+    "class-methods-use-this": "off",
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "jsdoc/require-param-description": "off",
+    "jsdoc/require-property-description": "off",
+    "jsdoc/require-returns-description": "off",
+    "sort-requires/sort-requires": "error"
+  }
+}
